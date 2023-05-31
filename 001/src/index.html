@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo de manipulação do DOM</title>
+</head>
+<body>
+  <div id="root">
+    <!-- Seu conteúdo aqui -->
+  </div>
+
+  <script>
+    // Obtendo a referência à div raiz pelo seu ID
+    var root = document.getElementById('root');
+
+    // Criando um novo elemento para adicionar ao DOM
+    var novoElemento = document.createElement('p');
+    novoElemento.textContent = 'Olá, mundo!';
+
+    // Adicionando o novo elemento como um filho da div raiz
+    root.appendChild(novoElemento);
+  </script>
+</body>
+</html>
